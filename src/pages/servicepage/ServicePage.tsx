@@ -4,37 +4,37 @@ const services = [
 	{
 		id: 1,
 		title: "Abeille",
-		image_path: "public/images/abeilles.jpg",
+		image_path: "/images/abeilles.jpg",
 		texte: "Résumé de l'article 1",
 	},
 	{
 		id: 2,
 		title: "Frelons",
-		image_path: "public/images/frelons.jpg",
+		image_path: "/images/frelons.jpg",
 		texte: "Résumé de l'article 2",
 	},
 	{
 		id: 3,
 		title: "Puces",
-		image_path: "public/images/puces.jpg",
+		image_path: "/images/puces.jpg",
 		texte: "Résumé de l'article 3",
 	},
 	{
 		id: 4,
 		title: "Cafard",
-		image_path: "public/images/cafards.jpg",
+		image_path: "/images/cafards.jpg",
 		texte: "Résumé de l'article 4",
 	},
 	{
 		id: 5,
 		title: "Souris",
-		image_path: "public/images/souris.jpg",
+		image_path: "/images/souris.jpg",
 		texte: "Résumé de l'article 5",
 	},
 	{
 		id: 6,
 		title: "Rat",
-		image_path: "public/images/rats.jpg",
+		image_path: "/images/rats.jpg",
 		texte: "Résumé de l'article 6",
 	},
 ];

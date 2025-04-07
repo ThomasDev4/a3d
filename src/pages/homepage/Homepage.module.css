@@ -1,6 +1,6 @@
 /* ======= Section Background Image ======= */
 .backgroundImage {
-	background-image: url("public/images/bees-894289_1280.jpg");
+	background-image: url("/images/bees-894289_1280.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
