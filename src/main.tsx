@@ -11,7 +11,6 @@ import Homepage from "./pages/homepage/Homepage";
 import ContactForm from "./pages/contactpage/ContactForm";
 import Services from "./pages/servicepage/ServicePage";
 import AboutPage from "./pages/about/Aboutpage";
-import Login from "./pages/loginpage/LoginPage";
 
 // Import additional components for new routes
 // Try creating these components in the "pages" folder
@@ -24,32 +23,28 @@ import Login from "./pages/loginpage/LoginPage";
 // Create router configuration with routes
 // You can add more routes as you build out your app!
 const router = createBrowserRouter([
-  {
-    element: <App />, // Renders the App component for the home page
-    children: [
-      {
-        path: "/",
-        element: <Homepage />,
-      },
-      {
-        path: "/contact",
-        element: <ContactForm />,
-      },
-      {
-        path: "/services",
-        element: <Services />,
-      },
-      {
-        path: "/a-propos",
-        element: <AboutPage />,
-      },
-      {
-        path: "/admin",
-        element: <Login />,
-      },
-    ],
-  },
-  // Try adding a new route! For example, "/about" with an About component
+	{
+		element: <App />, // Renders the App component for the home page
+		children: [
+			{
+				path: "/",
+				element: <Homepage />,
+			},
+			{
+				path: "/contact",
+				element: <ContactForm />,
+			},
+			{
+				path: "/services",
+				element: <Services />,
+			},
+			{
+				path: "/a-propos",
+				element: <AboutPage />,
+			},
+		],
+	},
+	// Try adding a new route! For example, "/about" with an About component
 ]);
 
 /* ************************************************************************* */
@@ -57,14 +52,14 @@ const router = createBrowserRouter([
 // Find the root element in the HTML document
 const rootElement = document.getElementById("root");
 if (rootElement == null) {
-  throw new Error(`Your HTML Document should contain a <div id="root"></div>`);
+	throw new Error(`Your HTML Document should contain a <div id="root"></div>`);
 }
 
 // Render the app inside the root element
 createRoot(rootElement).render(
-  <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>,
+	<StrictMode>
+		<RouterProvider router={router} />
+	</StrictMode>,
 );
 
 /**
