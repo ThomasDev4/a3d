@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
-import styles from "./ContactForm.module.css";
+import styles from "./contactform.module.css";
 
 // Les services en dur
 const servicesList = [
