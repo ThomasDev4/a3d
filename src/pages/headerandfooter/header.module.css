@@ -1,0 +1,51 @@
+@import "../../styles/variable.css";
+
+.header {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: var(--secondary-color);
+}
+
+.navlink {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navlink li {
+  list-style-type: none;
+  font-size: 1.2rem;
+}
+
+.navlink a {
+  border: 2px solid transparent;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  position: relative;
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+  font-family: var(--font-texte);
+}
+
+.navlink a:hover {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-color: var(--primary-color);
+}
+
+.navlink a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: var(--secondary-color);
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s ease;
+}
+
+.navlink a:hover::before {
+  width: 100%;
+}

@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url(../assets/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf)
+    format("truetype");
+}
+
+:root {
+  --font-title: "Montserrat", sans-serif;
+  --font-texte: "OpenSans", sans-serif;
+  --primary-color: #f8f1e4;
+  --secondary-color: #2c5f2d;
+  --color-text: #0e0e0e;
+}

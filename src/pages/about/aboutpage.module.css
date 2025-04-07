@@ -1,0 +1,75 @@
+.aboutContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: var(--color-text);
+}
+
+.aboutContainer h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+  font-family: var(--font-title);
+}
+
+.location {
+  background-color: var(--primary-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  font-family: var(--font-texte);
+}
+
+.location h3 {
+  margin-bottom: 10px;
+  font-family: var(--font-title);
+}
+
+.contactInfo {
+  background-color: var(--primary-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contactInfo h3 {
+  margin-bottom: 15px;
+  font-family: var(--font-title);
+}
+
+.contactInfo p {
+  margin: 10px 0;
+  font-family: var(--font-texte);
+}
+
+.contactInfo a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-family: var(--font-texte);
+}
+
+.contactInfo a:hover {
+  text-decoration: underline;
+  color: var(--secondary-color);
+}
+
+.socialLinks {
+  margin-top: 20px;
+}
+
+.socialLinks h4 {
+  margin-bottom: 10px;
+}
+
+.socialLinks a {
+  display: inline-block;
+  margin-right: 15px;
+  color: #555;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.socialLinks a:hover {
+  color: #007bff;
+}

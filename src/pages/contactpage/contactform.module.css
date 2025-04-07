@@ -1,0 +1,142 @@
+/* ContactForm.module.css */
+.main {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: var(--font-title);
+}
+
+.form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-family: var(--font-title);
+}
+
+.field {
+  margin-bottom: 15px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: var(--font-title);
+}
+
+.field textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.submitButton {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: solid 2px var(--secondary-color);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: var(--font-title);
+  font-weight: bold;
+}
+
+.successMessage,
+.errorMessage {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  border-radius: 4px;
+  max-width: 300px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+
+.successMessage {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.errorMessage {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.submitButton:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: solid 2px var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .form {
+    padding: 15px;
+  }
+
+  .form h2 {
+    font-size: 1.8rem;
+  }
+
+  .field label {
+    font-size: 1.1rem;
+  }
+
+  .field input,
+  .field select,
+  .field textarea {
+    font-size: 1.1rem;
+  }
+
+  .submitButton {
+    padding: 12px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .form {
+    padding: 10px;
+  }
+
+  .form h2 {
+    font-size: 1.5rem;
+  }
+
+  .field label {
+    font-size: 1rem;
+  }
+
+  .field input,
+  .field select,
+  .field textarea {
+    font-size: 1rem;
+  }
+
+  .submitButton {
+    padding: 14px;
+    font-size: 1.2rem;
+  }
+}

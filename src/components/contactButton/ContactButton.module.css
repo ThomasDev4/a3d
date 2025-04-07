@@ -1,0 +1,78 @@
+.contactButton {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  border: none;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  width: 4.5rem;
+  height: 4.5rem;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 5rem;
+  text-decoration: none;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border: 1px solid;
+  display: block;
+  animation: bounce 5s infinite;
+}
+
+.contactButton:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.contactButton img {
+  height: 2.5rem;
+}
+
+@keyframes bounce {
+  70% {
+    transform: translateY(0%);
+  }
+  80% {
+    transform: translateY(-15%);
+  }
+  90% {
+    transform: translateY(0%);
+  }
+  95% {
+    transform: translateY(-7%);
+  }
+  97% {
+    transform: translateY(0%);
+  }
+  99% {
+    transform: translateY(-3%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .contactButton {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.8rem;
+    line-height: 4rem;
+  }
+
+  .contactButton img {
+    height: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactButton {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+  }
+
+  .contactButton img {
+    height: 2rem;
+  }
+}
