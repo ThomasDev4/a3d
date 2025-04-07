@@ -15,7 +15,7 @@ export default function Homepage() {
       <section className={styles.description}>
         <h2>Presentation</h2>
         <div className={styles.descriptionContent}>
-          <img src="src/assets/images/avatar-2092113.svg" alt="" />
+          <img src="public/images/avatar-2092113.svg" alt="" />
           <p>
             Bonjour et bienvenue ! Je m'appelle Paul et depuis 3 ans, je vous
             aide à retrouver la tranquillité en éliminant les nuisibles de votre
