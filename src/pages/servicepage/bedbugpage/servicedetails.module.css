@@ -1,0 +1,152 @@
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2rem;
+	font-family: Arial, sans-serif;
+	color: #1f1f1f;
+}
+
+.hero {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	justify-content: space-between;
+	gap: 2rem;
+	margin-bottom: 4rem;
+	height: 400px; /* Fixe la hauteur globale */
+}
+
+.imageWrapper {
+	flex: 1 1 48%;
+	height: 100%; /* prend toute la hauteur du parent */
+	overflow: hidden;
+	border-radius: 12px;
+	display: flex;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.coveredImage {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.textSide {
+	flex: 1 1 48%;
+	height: 100%; /* 🟢 égalise avec l’image */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border: 1px solid #e0e0e0;
+	border-radius: 12px;
+	padding: 2rem;
+	background-color: #fffdf5;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.title {
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: 1.5rem;
+}
+
+.iconGrid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 4rem;
+}
+
+.iconItem {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-weight: 500;
+	max-width: 120px;
+	text-align: center;
+}
+
+.iconItem span {
+	font-size: 2rem;
+	margin-bottom: 0.3rem;
+}
+
+.dangerSolution {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	margin-top: 4rem;
+}
+
+.sectionDangerAlert,
+.sectionSolution {
+	flex: 1 1 48%;
+	padding: 2rem;
+	border-radius: 12px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+	line-height: 1.6;
+}
+
+.sectionDangerAlert {
+	background-color: #ffe5e5;
+	color: #7b1e1e;
+}
+
+.sectionDangerAlert h2 {
+	color: #b00020;
+	font-size: 1.4rem;
+	margin-bottom: 1rem;
+}
+
+.sectionDangerAlert li {
+	margin-bottom: 0.8rem;
+	font-size: 1rem;
+}
+
+.sectionSolution {
+	background-color: #e6f9ec;
+	color: #174c3c;
+}
+
+.sectionSolution h2 {
+	font-size: 1.4rem;
+	color: #206a44;
+	margin-bottom: 1rem;
+}
+
+.sectionSolution li {
+	margin-bottom: 0.8rem;
+	font-size: 1rem;
+}
+
+.sectionSolution p {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	font-weight: bold;
+}
+
+.btn {
+	background-color: #3ab46d;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	padding: 0.75rem 1.5rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.25s ease;
+	text-decoration: none;
+}
+
+.btn:hover {
+	background-color: #2d9958;
+}
+
+@media (max-width: 768px) {
+	.hero,
+	.dangerSolution {
+		flex-direction: column;
+	}
+}

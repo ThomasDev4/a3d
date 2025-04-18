@@ -11,6 +11,7 @@ import Homepage from "./pages/homepage/Homepage";
 import ContactForm from "./pages/contactpage/ContactForm";
 import Services from "./pages/servicepage/ServicePage";
 import AboutPage from "./pages/about/Aboutpage";
+import ServiceDetail from "./pages/servicepage/bedbugpage/ServiceDetails";
 
 // Import additional components for new routes
 // Try creating these components in the "pages" folder
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
 			{
 				path: "/services",
 				element: <Services />,
+			},
+			{
+				path: "/services/:slug", // 🆕 nouvelle route dynamique
+				element: <ServiceDetail />,
 			},
 			{
 				path: "/a-propos",
