@@ -76,9 +76,14 @@
 }
 
 .descriptionContent img {
-	max-width: 20rem;
+	width: 20rem;
+	height: 20rem;
 	border-radius: 50%;
+	object-fit: cover;
+	object-position: center;
+	display: block;
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+	image-rendering: high-quality;
 }
 
 .descriptionContent p {

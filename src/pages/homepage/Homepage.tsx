@@ -1,46 +1,31 @@
 import styles from "./Homepage.module.css";
 
 export default function Homepage() {
-  return (
-    <main>
-      <div className={styles.backgroundImage}>
-        <section className={styles.textTopRight}>
-          <h1>Des nuisibles chez vous ?</h1>
-          <p>
-            Pas de panique, je suis là pour vous aider à retrouver votre
-            tranquillité en un clin d'œil !
-          </p>
-        </section>
-      </div>
-      <section className={styles.description}>
-        <h2>Presentation</h2>
-        <div className={styles.descriptionContent}>
-          <img src="/images/avatar-2092113.svg" alt="" />
-          <p>
-            Bonjour et bienvenue ! Je m'appelle Paul et depuis 3 ans, je vous
-            aide à retrouver la tranquillité en éliminant les nuisibles de votre
-            quotidien. Passionné par mon métier, j'interviens rapidement et
-            discrètement avec des solutions respectueuses de l'environnement.
-            Vous avez un problème de rongeurs ou d'insectes ? Contactez-moi, je
-            serai heureux de vous aider à retrouver un espace de vie sain et
-            sécurisé.
-          </p>
-        </div>
-        <section className={styles.contactInfo}>
-          <h2>Contact</h2>
-          <p>
-            <strong>Adresse :</strong> 123 Rue Exemple, Normandie, France
-          </p>
-          <p>
-            <strong>Téléphone :</strong>
-            <a href="tel:+33000000000"> 00 00 00 00 00</a>
-          </p>
-          <p>
-            <strong>Email :</strong>
-            <a href="mailto:exemple@email.com">exemple@email.com</a>
-          </p>
-        </section>
-      </section>
-    </main>
-  );
+	return (
+		<main>
+			<div className={styles.backgroundImage}>
+				<section className={styles.textTopRight}>
+					<h1>Notre mission ?</h1>
+					<p>
+						Vous débarrasser durablement des nuisibles pour protéger votre
+						santé, votre habitation et votre activité.
+					</p>
+				</section>
+			</div>
+			<section className={styles.description}>
+				<h2>Presentation</h2>
+				<div className={styles.descriptionContent}>
+					<img src="/images/CarreLogoA3D.png" alt="" />
+					<p>
+						Chez Assistance 3D, nous mettons notre expertise au service des
+						particuliers, professionnels, collectivités et exploitants agricoles
+						pour lutter efficacement contre tous types de nuisibles. Installés
+						localement, nous intervenons rapidement dans les départements de la
+						Manche (50) et du Calvados (14) pour des traitements fiables,
+						durables et respectueux de votre environnement.
+					</p>
+				</div>
+			</section>
+		</main>
+	);
 }
