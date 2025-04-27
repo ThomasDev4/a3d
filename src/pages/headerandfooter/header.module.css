@@ -1,51 +1,61 @@
 @import "../../styles/variable.css";
 
 .header {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  background-color: var(--secondary-color);
+	background-color: var(--primary-color);
+}
+
+.logoImg {
+	width: 220px;
+	height: auto;
 }
 
 .navlink {
-  display: flex;
-  justify-content: space-around;
+	display: flex;
+	align-items: center; /* Aligne tout au centre verticalement */
+	gap: 2rem; /* Espace entre logo et liens */
+	list-style: none; /* Optionnel : enlève les puces de liste */
+	padding: 0;
+	margin: 0;
+	justify-content: space-around;
 }
 
 .navlink li {
-  list-style-type: none;
-  font-size: 1.2rem;
+	list-style-type: none;
+	font-size: 1.2rem;
 }
 
 .navlink a {
-  border: 2px solid transparent;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  position: relative;
-  color: var(--primary-color);
-  transition: all 0.3s ease;
-  font-family: var(--font-texte);
+	border: 2px solid transparent;
+	padding: 0.5rem 1rem;
+	text-decoration: none;
+	position: relative;
+	color: var(--secondary-color);
+	transition: all 0.3s ease;
+	font-family: var(--font-texte);
+	font-size: 1.2rem;
+	font-weight: bold;
 }
 
-.navlink a:hover {
-  color: var(--secondary-color);
-  background-color: var(--primary-color);
-  border-radius: 5px;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  border-color: var(--primary-color);
+.navlink a:not(.logo):hover {
+	color: var(--primary-color);
+	background-color: var(--secondary-color);
+	border-radius: 5px;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	border-color: var(--primary-color);
 }
 
-.navlink a::before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  background-color: var(--secondary-color);
-  left: 0;
-  bottom: 0;
-  transition: width 0.3s ease;
+.navlink a:not(.logo)::before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 2px;
+	background-color: var(--secondary-color);
+	left: 0;
+	bottom: 0;
+	transition: width 0.3s ease;
 }
 
 .navlink a:hover::before {
-  width: 100%;
+	width: 100%;
 }

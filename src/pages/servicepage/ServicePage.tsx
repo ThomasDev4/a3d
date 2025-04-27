@@ -13,7 +13,6 @@ export default function Services() {
 						className={styles.serviceImage}
 					/>
 					<h3 className={styles.serviceTitle}>{service.title}</h3>
-					<p className={styles.serviceSummary}>{service.texte}</p>
 
 					<div className={styles.buttonGroup}>
 						<Link
