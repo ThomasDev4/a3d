@@ -434,7 +434,7 @@ export const services = [
 					"Risque pour les cultures",
 					"Propagation des campagnols",
 					"Réseaux souterrains étendus",
-					"Destruction «indirect»des cultures.",
+					"Destruction «indirecte» des cultures.",
 				],
 			},
 			solution: {
