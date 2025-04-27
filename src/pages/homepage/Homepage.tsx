@@ -18,11 +18,11 @@ export default function Homepage() {
 					<img src="/images/CarreLogoA3D.png" alt="" />
 					<p>
 						Chez Assistance 3D, nous mettons notre expertise au service des
-						particuliers, professionnels, collectivités et exploitants agricoles
-						pour lutter efficacement contre tous types de nuisibles. Installés
-						localement, nous intervenons rapidement dans les départements de la
-						Manche (50) et du Calvados (14) pour des traitements fiables,
-						durables et respectueux de votre environnement.
+						particuliers, professionnels, collectivités, agroalimentaires et
+						exploitants agricoles pour lutter efficacement contre tous types de
+						nuisibles. Installés localement, nous intervenons rapidement dans
+						les départements de la Manche (50) et du Calvados (14) pour des
+						traitements fiables, durables et respectueux de votre environnement.
 					</p>
 				</div>
 			</section>

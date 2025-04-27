@@ -3,7 +3,9 @@ export const services = [
 		id: 1,
 		title: "Souris",
 		slug: "souris",
-		image_path: "/images/souris.jpg",
+		image_path: "/images/souris2.jpg",
+		description:
+			"Elles se faufilent partout, se reproduisent à grande vitesse et causent des dégâts disproportionnés à leur taille. Les souris comptent parmi les nuisibles les plus fréquents dans les habitations comme dans les locaux professionnels.",
 		texte:
 			"Petites mais destructrices, les souris représentent un risque sanitaire et matériel.",
 		dangers: [
@@ -12,11 +14,11 @@ export const services = [
 				texte: "Maladies transmissibles",
 			},
 			{
-				emoji: "⚡",
+				emoji: "🔥",
 				texte: "Risque d’incendie",
 			},
 			{
-				emoji: "🧻",
+				emoji: "🔌",
 				texte: "Dommages matériels",
 			},
 		],
@@ -47,6 +49,8 @@ export const services = [
 		title: "Rats",
 		slug: "rats",
 		image_path: "/images/rats.jpg",
+		description:
+			"Rapides, méfiants et très intelligents, les rats sont des envahisseurs redoutables, capables de s’adapter à presque tous les environnements. Leur présence n’est jamais anodine : ils causent des dégâts matériels, contaminent les lieux et représentent un réel danger pour la santé humaine.",
 		texte:
 			"Redoutables, les rats sont porteurs de maladies graves et causent de lourds dégâts.",
 		dangers: [
@@ -59,13 +63,13 @@ export const services = [
 				texte: "Dégradent les bâtiments",
 			},
 			{
-				emoji: "⚠️",
+				emoji: "🔥",
 				texte: "Risque d’incendie",
 			},
 		],
 		details: {
 			danger: {
-				title: "Pourquoi faut-il s’en méfier ?",
+				title: "Quelles nuisances sont provoquées par les",
 				points: [
 					"Contamination des surfaces",
 					"Transmission de la leptospirose",
@@ -90,6 +94,8 @@ export const services = [
 		title: "Punaises de lit",
 		slug: "punaises",
 		image_path: "/images/punaises.webp",
+		description:
+			"Petites, discrètes, et actives la nuit, les punaises de lit sont devenues un véritable cauchemar pour les particuliers comme pour les professionnels (hôtels, locations saisonnières…). Elles piquent pour se nourrir de sang et laissent derrière elles des traces indésirables… et beaucoup d’angoisse.",
 		texte:
 			"Les punaises de lit sont un véritable fléau pour les particuliers comme les professionnels.",
 		dangers: [
@@ -102,13 +108,13 @@ export const services = [
 				texte: "Stress et anxiété",
 			},
 			{
-				emoji: "🧳",
+				emoji: "⌛️",
 				texte: "Propagation rapide",
 			},
 		],
 		details: {
 			danger: {
-				title: "Pourquoi faut-il s’en méfier ?",
+				title: "Quelles nuisances sont provoquées par les",
 				points: [
 					"Piqûres multiples provoquant démangeaisons",
 					"Propagation rapide dans le logement",
@@ -133,6 +139,8 @@ export const services = [
 		title: "Cafards",
 		slug: "cafards",
 		image_path: "/images/cafards.jpg",
+		description:
+			"Aussi appelés blattes, les cafards sont parmi les nuisibles les plus redoutés. Rapides, nocturnes et très résistants, ils se cachent dans les moindres recoins et prolifèrent à une vitesse inquiétante. Une fois installés, ils deviennent particulièrement difficiles à déloger.",
 		texte:
 			"Rapides, résistants, les cafards prolifèrent vite et propagent des maladies.",
 		dangers: [
@@ -151,7 +159,7 @@ export const services = [
 		],
 		details: {
 			danger: {
-				title: "Pourquoi faut-il s’en méfier ?",
+				title: "Quelles nuisances sont provoquées par les",
 				points: [
 					"Propagent virus et bactéries",
 					"Déjections responsables d’allergies",
@@ -177,6 +185,8 @@ export const services = [
 		title: "Guêpes",
 		slug: "guepes",
 		image_path: "/images/guepes.jpg",
+		description:
+			"Indésirables lors des repas en plein air, les guêpes peuvent aussi devenir une menace sérieuse si elles construisent un nid près de chez vous. Leur piqûre est douloureuse, parfois dangereuse, et leur agressivité augmente à mesure que la colonie grandit.",
 		texte:
 			"Les guêpes deviennent agressives lorsqu’elles défendent leur nid, rendant leur présence risquée.",
 		dangers: [
@@ -185,7 +195,7 @@ export const services = [
 				texte: "Piqûres douloureuses",
 			},
 			{
-				emoji: "⚠️",
+				emoji: "😷",
 				texte: "Risque de choc allergique",
 			},
 			{
@@ -195,7 +205,7 @@ export const services = [
 		],
 		details: {
 			danger: {
-				title: "Pourquoi faut-il s’en méfier ?",
+				title: "Quelles nuisances sont provoquées par les",
 				points: [
 					"Piqûres douloureuses et répétées",
 					"Danger pour les personnes allergiques",
@@ -207,7 +217,7 @@ export const services = [
 				title: "Assistance 3D : votre expert anti-guêpes",
 				points: [
 					"Élimination sécurisée du nid",
-					"Produits certifiés et sans danger",
+					"Produits certifiés",
 					"Intervention rapide",
 					"Prévention de la réapparition",
 				],
@@ -220,6 +230,8 @@ export const services = [
 		title: "Frelons asiatiques",
 		slug: "frelons-asiatiques",
 		image_path: "/images/frelons-asiatiques.jpg",
+		description:
+			"Invasif, agressif et capable de piquer à plusieurs reprises, le frelon asiatique est un redoutable prédateur. Il représente non seulement un risque pour l’homme, mais aussi une menace pour les abeilles, dont il se nourrit. Son élimination doit être rapide, sécurisée… et confiée à des professionnels.",
 		texte:
 			"Invasif et dangereux, le frelon asiatique attaque en groupe s’il se sent menacé.",
 		dangers: [
@@ -233,12 +245,12 @@ export const services = [
 			},
 			{
 				emoji: "👶",
-				texte: "Risque pour les enfants",
+				texte: "Risque de choc allergique",
 			},
 		],
 		details: {
 			danger: {
-				title: "Pourquoi faut-il s’en méfier ?",
+				title: "Quelles nuisances sont provoquées par les",
 				points: [
 					"Piqûres multiples et douloureuses",
 					"Menace pour la biodiversité (abeilles)",
@@ -252,7 +264,6 @@ export const services = [
 					"Repérage du nid",
 					"Destruction sécurisée",
 					"Produits homologués",
-					"Suivi anti-récidive",
 				],
 				cta: "Neutraliser un frelon asiatique",
 			},
@@ -263,6 +274,8 @@ export const services = [
 		title: "Frelons européens",
 		slug: "frelons-europeens",
 		image_path: "/images/frelon-europeen.jpg",
+		description:
+			"Le frelon européen est le plus grand hyménoptère d’Europe. Bien qu’il soit moins agressif que le frelon asiatique, sa piqûre reste douloureuse, et son nid peut devenir problématique lorsqu’il est installé à proximité des habitations. Il est donc essentiel de rester vigilant.",
 		texte:
 			"Moins agressif mais impressionnant, le frelon européen peut nicher dans vos murs ou combles.",
 		dangers: [
@@ -272,7 +285,7 @@ export const services = [
 			},
 			{
 				emoji: "🧱",
-				texte: "Nid dans les murs",
+				texte: "Risque de choc allergique",
 			},
 			{
 				emoji: "👂",
@@ -281,7 +294,7 @@ export const services = [
 		],
 		details: {
 			danger: {
-				title: "Pourquoi faut-il s’en méfier ?",
+				title: "Quelles nuisances sont provoquées par les",
 				points: [
 					"Nid dans des cavités sombres",
 					"Peut causer des dégâts au bois",
@@ -306,6 +319,8 @@ export const services = [
 		title: "Fourmis",
 		slug: "fourmis",
 		image_path: "/images/fourmis.jpg",
+		description:
+			"Elles avancent en colonnes, semblent inoffensives… et pourtant, une infestation de fourmis peut vite devenir un vrai cauchemar. Très présentes au printemps et en été, elles s’infiltrent dans les habitations à la recherche de nourriture et peuvent coloniser un espace en un rien de temps.",
 		texte:
 			"Petites mais envahissantes, les fourmis s’infiltrent partout et construisent leurs nids dans vos murs.",
 		dangers: [
@@ -324,7 +339,7 @@ export const services = [
 		],
 		details: {
 			danger: {
-				title: "Pourquoi faut-il s’en méfier ?",
+				title: "Quelles nuisances sont provoquées par les",
 				points: [
 					"Invasion des cuisines",
 					"Colonies pouvant contenir des milliers d’individus",
@@ -349,11 +364,13 @@ export const services = [
 		title: "Puces",
 		slug: "puces",
 		image_path: "/images/puces.jpg",
+		description:
+			"Les puces sont de minuscules insectes piqueurs et sauteurs, souvent transportés par les animaux domestiques, mais capables d’envahir toute une habitation. Leurs piqûres répétées provoquent démangeaisons, irritations et parfois réactions allergiques. Une infestation non traitée peut rapidement devenir un cauchemar.",
 		texte:
 			"Les puces piquent, sautent, se reproduisent vite et sont un enfer pour vous et vos animaux.",
 		dangers: [
 			{
-				emoji: "🦟",
+				emoji: "🩸",
 				texte: "Piqûres multiples",
 			},
 			{
@@ -367,7 +384,7 @@ export const services = [
 		],
 		details: {
 			danger: {
-				title: "Pourquoi faut-il s’en méfier ?",
+				title: "Quelles nuisances sont provoquées par les",
 				points: [
 					"Piqûres nombreuses",
 					"Réactions allergiques",
@@ -379,8 +396,7 @@ export const services = [
 				title: "Assistance 3D : votre expert anti-puces",
 				points: [
 					"Diagnostic précis",
-					"Traitement environnemental",
-					"Conseils vétérinaires",
+					"Produits certifiés ",
 					"Suivi post-traitement",
 				],
 				cta: "Éradiquer les puces",
@@ -392,6 +408,8 @@ export const services = [
 		title: "Taupes",
 		slug: "taupes",
 		image_path: "/images/taupes.jpg",
+		description:
+			"La taupe est un animal solitaire et souterrain, rarement visible, mais dont les dégâts sont bien connus. En creusant des galeries pour se nourrir, elle laisse derrière elle des monticules de terre disgracieux appelés taupinières, et peut endommager durablement vos espaces verts.",
 		texte:
 			"Les taupes détruisent les pelouses et les sols avec leurs galeries souterraines.",
 		dangers: [
@@ -410,12 +428,13 @@ export const services = [
 		],
 		details: {
 			danger: {
-				title: "Pourquoi faut-il s’en méfier ?",
+				title: "Quelles nuisances sont provoquées par les",
 				points: [
 					"Taupinières disgracieuses",
 					"Risque pour les cultures",
 					"Propagation des campagnols",
 					"Réseaux souterrains étendus",
+					"Destruction «indirect»des cultures.",
 				],
 			},
 			solution: {

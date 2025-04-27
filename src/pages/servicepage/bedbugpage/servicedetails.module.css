@@ -16,6 +16,20 @@
 	height: 400px; /* Fixe la hauteur globale */
 }
 
+.centerDescription {
+	background-color: #fffdf5;
+	color: #333;
+	padding: 2rem 3rem;
+	margin: 0 auto 4rem auto;
+	border-radius: 12px;
+	text-align: center;
+	font-size: 1.2rem;
+	font-weight: 500;
+	line-height: 1.6;
+	max-width: 800px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
 .imageWrapper {
 	flex: 1 1 48%;
 	height: 100%; /* prend toute la hauteur du parent */
@@ -180,6 +194,11 @@
 		flex: 1 1 100%;
 	}
 
+	.centerDescription {
+		padding: 1.5rem 2rem;
+		font-size: 1.05rem;
+	}
+
 	.imageWrapper {
 		height: 250px; /* taille plus petite pour mobile */
 	}
@@ -233,5 +252,10 @@
 	.btn {
 		width: 100%;
 		text-align: center;
+	}
+
+	.centerDescription {
+		padding: 1rem 1.5rem;
+		font-size: 1rem;
 	}
 }

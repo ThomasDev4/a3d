@@ -38,6 +38,13 @@ export default function ServiceDetail() {
 				</div>
 			</section>
 
+			{/* --- NOUVELLE SECTION DESCRIPTION --- */}
+			<section className={styles.centerDescription}>
+				<p>
+					{service.description}
+				</p>
+			</section>
+
 			{/* DANGER / SOLUTION SECTIONS */}
 			<section className={styles.dangerSolution}>
 				<div className={styles.sectionDangerAlert}>
