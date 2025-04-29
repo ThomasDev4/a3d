@@ -31,8 +31,8 @@ export default function Homepage() {
 				<div className={styles.avisText}>
 					<h2>Laissez nous un avis !</h2>
 					<p>
-						Si vous souhaitez laissez un avis suite à notre passage lors d'une
-						intervention, voici les liens par ville pour pouvoir le faire :
+						Si vous souhaitez laisser un avis suite à notre passage lors d'une
+						intervention, voici les liens par ville pour le faire :
 					</p>
 					<ul>
 						<li>
