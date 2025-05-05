@@ -17,7 +17,7 @@
 	max-width: 47%;
 	padding: 1rem;
 	border-radius: 10px;
-	border-radius: 10px;
+	color: var(--primary-color);
 }
 
 .textTopRight h1 {
@@ -25,6 +25,7 @@
 	font-size: clamp(2rem, 4vw, 4rem);
 	margin-bottom: 2rem;
 	animation: fadeInUp 2s ease;
+	text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 
 .textTopRight p {
@@ -32,8 +33,10 @@
 	font-size: clamp(1rem, 2vw, 2.2rem);
 	animation: fadeInUp 2s ease;
 	margin-bottom: 2rem;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
+/* ======= Keyframes ======= */
 @keyframes fadeInUp {
 	from {
 		opacity: 0;
@@ -76,8 +79,8 @@
 }
 
 .descriptionContent img {
-	width: 20rem;
-	height: 20rem;
+	width: clamp(12rem, 40vw, 20rem);
+	height: clamp(12rem, 40vw, 20rem);
 	border-radius: 50%;
 	object-fit: cover;
 	object-position: center;
@@ -94,6 +97,8 @@
 	text-align: left;
 	line-height: 1.6;
 	color: #444;
+	overflow-wrap: break-word;
+	word-break: break-word;
 }
 
 /* ======= Section Contact ======= */
@@ -120,8 +125,10 @@
 	margin: 1rem 0;
 	font-family: var(--font-texte);
 	color: var(--text-color);
+	overflow-wrap: break-word;
 }
 
+/* ======= Contact Links ======= */
 .contactInfo a {
 	color: var(--text-color);
 	text-decoration: none;
@@ -133,36 +140,27 @@
 	text-decoration: underline;
 }
 
-/* ======= Animations ======= */
-@keyframes fadeInUp {
-	from {
-		opacity: 0;
-		transform: translateY(30px);
-	}
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-
+/* ======= Avis Section ======= */
 .avis {
 	display: flex;
-	flex-wrap: wrap; /* Permet l’adaptation sur mobile */
+	flex-wrap: wrap;
 	align-items: flex-start;
-	justify-content: center;
+	justify-content: space-between;
 	padding: 2rem;
 	width: 80%;
 	margin: 3rem auto;
 	background: linear-gradient(145deg, #f8f1e4 30%, #c9d6c1 60%, #2c5f2d 100%);
 	border-radius: 1rem;
 	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-	justify-content: space-between;
+	gap: 2rem;
 }
 
 .avis img {
-	max-width: 300px;
+	width: clamp(12rem, 40vw, 20rem);
 	height: auto;
 	flex-shrink: 0;
+	border-radius: 10px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .avisText {
@@ -171,23 +169,20 @@
 }
 
 .avisText h2 {
-	font-size: 2rem;
-	color: #2e5e2e;
-	margin-bottom: 1rem;
+	font-size: 2.5rem;
 	color: var(--secondary-color);
 	font-family: var(--font-title);
-	font-size: 2.5rem;
 	margin-bottom: 2rem;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
 
 .avisText p {
-	font-size: 1.1rem;
+	font-size: 1.3rem;
 	margin-bottom: 1.5rem;
 	color: #333;
 	font-family: var(--font-texte);
-	font-size: 1.3rem;
+	overflow-wrap: break-word;
 }
 
 .avisText ul {
@@ -200,20 +195,16 @@
 }
 
 .avisText a {
-	color: #1a57d0;
-	text-decoration: none;
-	font-weight: 500;
-	font-family: var(--font-texte);
 	display: inline-block;
 	padding: 0.625rem 0.938rem;
-	transition: transform 0.3s ease, filter 0.3s ease;
-	background-color: var(--primary-color);
 	color: var(--secondary-color);
-	border: solid 2px var(--secondary-color);
-	text-decoration: none;
+	background-color: var(--primary-color);
+	border: 2px solid var(--secondary-color);
 	border-radius: 4px;
-	transition: background-color 0.3s, box-shadow 0.3s ease;
+	font-weight: 500;
 	font-family: var(--font-texte);
+	text-decoration: none;
+	transition: background-color 0.3s, box-shadow 0.3s ease;
 }
 
 .avisText a:hover {
@@ -223,38 +214,34 @@
 }
 
 /* ======= Responsive Design ======= */
-
-@media (max-width: 768px) {
+@media (max-width: 1060px) {
 	.backgroundImage {
 		height: 80vh;
-		padding: 1.5rem;
+		padding: 2rem;
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: flex-start;
+		
 	}
 
-	.backgroundImage h1 {
-		font-size: 3rem;
-		width: 100%;
-		right: 10%;
-		top: 20%;
+	.textTopRight {
+		max-width: 80%;
+		text-align: left;
+		padding: 1rem;
 	}
 
-	.backgroundImage p {
-		font-size: 1.2rem;
-		width: 100%;
-		right: 10%;
-		top: 45%;
+	.textTopRight h1 {
+		font-size: clamp(1.5rem, 5vw, 3.5rem);
 	}
 
-	.description h2 {
-		font-size: 2rem;
+	.textTopRight p {
+		font-size: clamp(1rem, 3vw, 1.3rem);
 	}
 
 	.descriptionContent {
 		flex-direction: column;
-		justify-content: center;
-	}
-
-	.descriptionContent img {
-		max-width: 18rem;
+		gap: 2rem;
+		align-items: center;
 	}
 
 	.descriptionContent p {
@@ -262,9 +249,10 @@
 		max-width: 90%;
 		text-align: center;
 	}
+
 	.contactInfo {
 		margin-top: 2rem;
-		padding: 15px;
+		padding: 1rem;
 	}
 
 	.contactInfo h2 {
@@ -275,40 +263,33 @@
 		font-size: 1.2rem;
 	}
 
-	.textTopRight {
-		max-width: 50%;
-		text-align: left;
+	.avis {
+		flex-direction: column;
+		align-items: center;
 	}
 
-	.textTopRight h1 {
-		font-size: clamp(1.5rem, 5vw, 3.5rem);
-	}
-
-	.textTopRight p {
-		font-size: clamp(1rem, 3vw, 1.3rem);
+	.avisText {
+		text-align: center;
 	}
 }
 
 @media (max-width: 480px) {
 	.backgroundImage {
 		height: 70vh;
+		padding: 1rem;
 	}
 
-	.backgroundImage h1 {
+	.textTopRight h1 {
+		font-size: 1.5rem;
+	}
+
+	.textTopRight p {
 		font-size: 1rem;
-		width: 100%;
-		right: 20%;
-		top: 15%;
 	}
 
-	.backgroundImage p {
-		font-size: 1rem;
-		width: 100%;
-		right: 15%;
-		top: 50%;
-	}
-
-	.description h2 {
+	.description h2,
+	.contactInfo h2,
+	.avisText h2 {
 		font-size: 1.8rem;
 	}
 
@@ -320,16 +301,13 @@
 		max-width: 16rem;
 	}
 
-	.descriptionContent p {
+	.descriptionContent p,
+	.contactInfo p,
+	.avisText p {
 		font-size: 1rem;
-		max-width: 90%;
 	}
 
-	.contactInfo h2 {
-		font-size: 1.8rem;
-	}
-
-	.contactInfo p {
-		font-size: 1rem;
+	.avis img {
+		width: 100%;
 	}
 }

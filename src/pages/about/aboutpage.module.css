@@ -1,4 +1,3 @@
-
 .zoneIntervention {
 	padding: 3rem 1rem;
 	background-color: #f9f9f9;
@@ -12,6 +11,7 @@
 	font-weight: bold;
 	margin-bottom: 1.5rem;
 	color: #1f1f1f;
+	font-family: var(--font-title);
 }
 
 .zoneIntro {
@@ -19,6 +19,7 @@
 	margin: 0 auto 2rem;
 	font-size: 1.1rem;
 	color: #333;
+	font-family: var(--font-texte);
 }
 
 .zoneContent {
@@ -28,6 +29,7 @@
 	align-items: stretch;
 	gap: 2rem;
 	margin-bottom: 2rem;
+	font-family: var(--font-texte);
 }
 
 .zoneGrid {
@@ -62,6 +64,7 @@
 	margin-top: 2rem;
 	font-style: italic;
 	font-size: 1rem;
+	font-family: var(--font-texte);
 }
 
 @media (max-width: 768px) {
@@ -72,8 +75,10 @@
 	}
 
 	.zoneGrid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr); /* 2 colonnes égales */
+		gap: 1rem;
 		max-width: 100%;
-		height: auto;
 	}
 
 	.mapContainer {

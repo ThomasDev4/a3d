@@ -38,11 +38,12 @@
 	font-size: 1.5em;
 	margin: 0.938rem;
 	color: var(--text-color);
+	text-align: center;
 }
 
-.serviceSummary {
-	margin: 0 0.938rem 0.938rem;
-	color: var(--text-color);
+.buttonGroup{
+	display: flex;
+	justify-content: space-evenly;
 }
 
 .serviceButton {

@@ -49,7 +49,7 @@ export default function AboutPage() {
 				</div>
 
 				<MapContainer
-					center={[49.1829, -0.3707]}
+					center={[49.1829, -0.7]} // décalage vers la gauche (ouest)
 					zoom={8}
 					scrollWheelZoom={false}
 					className={styles.mapContainer}

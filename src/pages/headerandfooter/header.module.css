@@ -2,6 +2,10 @@
 
 .header {
 	background-color: var(--primary-color);
+	display: flex;
+	align-items: center;
+	padding: 1rem 2rem;
+	justify-content: space-between;
 }
 
 .logoImg {
@@ -11,9 +15,8 @@
 
 .navlink {
 	display: flex;
-	align-items: center; /* Aligne tout au centre verticalement */
-	gap: 2rem; /* Espace entre logo et liens */
-	list-style: none; /* Optionnel : enlève les puces de liste */
+	gap: 2rem;
+	list-style: none;
 	padding: 0;
 	margin: 0;
 	justify-content: space-around;
@@ -61,33 +64,33 @@
 }
 
 @media (max-width: 768px) {
-	/* Disposition du header en colonne sur mobile */
 	.header {
-		flex-direction: column; /* Affichage en colonne sur mobile */
-		justify-content: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		padding: 20px;
 		text-align: center;
 	}
 
-	/* Logo réduit et espacé du reste */
 	.logoImg {
-		width: 180px; /* Logo plus petit sur mobile */
-		margin-bottom: 1rem; /* Espacement entre le logo et les liens */
+		width: 180px;
+		margin-bottom: 1rem; /* espace sous le logo */
 	}
 
-	/* Affichage des liens en colonne */
 	.navlink {
 		display: flex;
-		flex-direction: column; /* Les liens sont empilés en colonne */
-		justify-content: center;
-		align-items: center; /* Centrer les liens verticalement */
-		gap: 1.5rem; /* Espacement entre les liens */
-		width: auto; /* Largeur ajustée */
+		align-items: center;
+		gap: 1.5rem;
+		padding: 0;
+		margin: 0;
 	}
 
-	/* Réduction de la taille des liens pour mobile */
+	.navlink li {
+		font-size: 1rem;
+	}
+
 	.navlink a {
-		font-size: 1rem; /* Taille plus petite des liens */
-		padding: 0.5rem; /* Moins d'espace autour des liens */
+		font-size: 1rem;
+		padding: 0.5rem;
 	}
 }
