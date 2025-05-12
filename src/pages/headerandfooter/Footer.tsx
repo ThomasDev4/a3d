@@ -6,11 +6,20 @@ export default function Footer() {
 			<ul className={styles.footerUl}>
 				<li>
 					<strong> Téléphone : </strong>
-					<a href="tel:+33000000000">00 00 00 00 00</a>
+					<a href="tel:+33613891348">06 13 89 13 48 </a>
 				</li>
 				<li>
 					<strong> Email :</strong>
-					<a href="mailto:exemlile@email.com"> exemple@email.com</a>
+					<a href="mailto:contact@assistance3d.fr">contact@assistance3d.fr</a>
+				</li>
+				<li>
+					<a href="https://www.facebook.com/people/Assistance-3D/61574891717785/">
+						<img
+							className={styles.facebook}
+							src="/images/facebook.svg"
+							alt="Facebook"
+						/>
+					</a>
 				</li>
 			</ul>
 			<p>© Assistance 3D Tous droits réservés.</p>

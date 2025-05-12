@@ -20,10 +20,15 @@
 }
 
 .footer p:last-child {
-  text-align: center;
-  color: var(--primary-color);
-  font-family: var(--font-texte);
-  padding-top: 1rem;
+	text-align: center;
+	color: var(--primary-color);
+	font-family: var(--font-texte);
+	padding-top: 1rem;
+}
+
+.facebook {
+	height: 40px;
+	width: 40px;
 }
 
 @media (max-width: 768px) {
