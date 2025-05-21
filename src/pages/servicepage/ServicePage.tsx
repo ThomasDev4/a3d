@@ -15,10 +15,7 @@ export default function Services() {
 					<h3 className={styles.serviceTitle}>{service.title}</h3>
 
 					<div className={styles.buttonGroup}>
-						<Link
-							to={`/contact?service=${service.title}`}
-							className={styles.serviceButton}
-						>
+						<Link to={"/a-propos"} className={styles.serviceButton}>
 							Demander un devis
 						</Link>
 						<Link

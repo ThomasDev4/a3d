@@ -40,9 +40,7 @@ export default function ServiceDetail() {
 
 			{/* --- NOUVELLE SECTION DESCRIPTION --- */}
 			<section className={styles.centerDescription}>
-				<p>
-					{service.description}
-				</p>
+				<p>{service.description}</p>
 			</section>
 
 			{/* DANGER / SOLUTION SECTIONS */}
@@ -69,7 +67,7 @@ export default function ServiceDetail() {
 							tranquillité.
 						</strong>
 					</p>
-					<Link to={`/contact?service=${service.title}`} className={styles.btn}>
+					<Link to={"/a-propos"} className={styles.btn}>
 						{service.details.solution.cta}
 					</Link>
 				</div>
