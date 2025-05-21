@@ -4,9 +4,13 @@ export default function Footer() {
 	return (
 		<footer className={styles.footer}>
 			<ul className={styles.footerUl}>
-				<li>
-					<strong> Téléphone : </strong>
-					<a href="tel:+33613891348">06 13 89 13 48 </a>
+				<li className={styles.footerPhone}>
+					<strong> Téléphone :</strong>
+					<div className={styles.phoneGroup}>
+						<a href="tel:+33613891348">06 13 89 13 48</a>
+						<span className={styles.phoneSeparator}>ou</span>
+						<a href="tel:+33233402246">02 33 40 22 46</a>
+					</div>
 				</li>
 				<li>
 					<strong> Email :</strong>

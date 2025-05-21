@@ -33,6 +33,24 @@ const locations = [
 export default function AboutPage() {
 	return (
 		<section className={styles.zoneIntervention}>
+			<h1 className={styles.zoneTitle}>Nous contacter : </h1>
+			<div className={styles.contactSection}>
+				<div className={styles.contactSection}>
+					<a href="tel:+33613891348" className={styles.contactLink}>
+						📞 06 13 89 13 48
+					</a>
+					<a href="tel:+33233402246 " className={styles.contactLink}>
+						📞 02 33 40 22 46
+					</a>
+					<a
+						href="mailto:contact@assistance3d.fr"
+						className={styles.contactMail}
+					>
+						✉️ contact@assistance3d.fr
+					</a>
+				</div>
+			</div>
+
 			<h2 className={styles.zoneTitle}>Zone d'intervention</h2>
 			<p className={styles.zoneIntro}>
 				Nous intervenons dans les departement de la Manche et du Calvados,

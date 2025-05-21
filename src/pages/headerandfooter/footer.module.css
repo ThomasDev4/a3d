@@ -11,12 +11,26 @@
 	list-style-type: none;
 	color: var(--primary-color);
 	font-family: var(--font-texte);
+	flex-wrap: wrap;
+}
+
+.footerUl li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 0.5rem;
 }
 
 .footerUl a {
 	text-decoration: none;
 	color: var(--primary-color);
 	font-family: var(--font-texte);
+	font-weight: 500;
+}
+
+.footerUl a:hover {
+	text-decoration: underline;
 }
 
 .footer p:last-child {
@@ -26,21 +40,53 @@
 	padding-top: 1rem;
 }
 
+/* Icone Facebook */
 .facebook {
 	height: 40px;
 	width: 40px;
+	transition: transform 0.2s;
 }
 
+.facebook:hover {
+	transform: scale(1.1);
+}
+
+/* Téléphone */
+.footerPhone {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.phoneGroup {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.5rem;
+}
+
+.phoneGroup a {
+	color: var(--primary-color);
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.phoneSeparator {
+	font-style: italic;
+	color: var(--primary-color);
+}
+
+/* Responsive */
 @media (max-width: 768px) {
 	.footerUl {
 		flex-direction: column;
 		align-items: center;
 		gap: 1rem;
-		text-align: center;
 		padding: 0;
 	}
 
-	.footerUl li {
-		font-size: 1rem;
+	.phoneGroup {
+		flex-direction: column;
+		gap: 0.25rem;
 	}
 }

@@ -6,6 +6,53 @@
 	margin: 0 auto;
 }
 
+.contactSection {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5rem;
+	margin-bottom: 2rem;
+	flex-wrap: wrap;
+	font-family: var(--font-texte);
+}
+
+.contactLink {
+	display: inline-block;
+	margin: 0 0.938rem 0.938rem;
+	padding: 0.625rem 0.938rem;
+	transition: transform 0.3s ease, filter 0.3s ease;
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+	border: solid 2px var(--secondary-color);
+	text-decoration: none;
+	border-radius: 4px;
+	transition: background-color 0.3s, box-shadow 0.3s ease;
+	font-family: var(--font-texte);
+}
+
+.contactLink:hover,
+.contactLink:focus {
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contactMail {
+	color: #007bff;
+	text-decoration: none;
+	font-size: 1rem;
+	padding: 0.5rem 1rem;
+	border-radius: 6px;
+	transition: text-decoration 0.3s;
+	user-select: none;
+}
+
+.contactMail:hover,
+.contactMail:focus {
+	text-decoration: underline;
+	outline: none;
+}
+
 .zoneTitle {
 	font-size: 2rem;
 	font-weight: bold;
@@ -68,6 +115,17 @@
 }
 
 @media (max-width: 768px) {
+	.contactSection {
+		justify-content: center;
+		gap: 1rem;
+	}
+
+	.contactLink,
+	.contactMail {
+		font-size: 0.9rem;
+		padding: 0.4rem 0.8rem;
+	}
+
 	.zoneContent {
 		flex-direction: column;
 		align-items: center;
@@ -76,7 +134,7 @@
 
 	.zoneGrid {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr); /* 2 colonnes égales */
+		grid-template-columns: repeat(2, 1fr);
 		gap: 1rem;
 		max-width: 100%;
 	}
