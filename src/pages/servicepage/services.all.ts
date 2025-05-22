@@ -419,7 +419,7 @@ export const services = [
 			},
 			{
 				emoji: "🌾",
-				texte: "Destruction de cultures",
+				texte: "Destruction de cultures indirecte",
 			},
 			{
 				emoji: "🕳️",
@@ -431,7 +431,6 @@ export const services = [
 				title: "Quelles nuisances sont provoquées par les",
 				points: [
 					"Taupinières disgracieuses",
-					"Risque pour les cultures",
 					"Propagation des campagnols",
 					"Réseaux souterrains étendus",
 					"Destruction indirecte des cultures.",
