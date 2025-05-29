@@ -46,7 +46,9 @@ export default function ServiceDetail() {
 			{/* DANGER / SOLUTION SECTIONS */}
 			<section className={styles.dangerSolution}>
 				<div className={styles.sectionDangerAlert}>
-					<h2>{service.details.danger.title}</h2>
+					<h2>
+						{service.details.danger.title} {service.slug}
+					</h2>
 					<ul>
 						{service.details.danger.points.map((point) => (
 							<li key={point}>{point}</li>

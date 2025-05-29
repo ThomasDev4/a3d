@@ -3,7 +3,7 @@ export const services = [
 		id: 1,
 		title: "Souris",
 		slug: "souris",
-		image_path: "/images/souris2.jpg",
+		image_path: "/images/souris1.webp",
 		description:
 			"Elles se faufilent partout, se reproduisent à grande vitesse et causent des dégâts disproportionnés à leur taille. Les souris comptent parmi les nuisibles les plus fréquents dans les habitations comme dans les locaux professionnels.",
 		texte:
@@ -48,7 +48,7 @@ export const services = [
 		id: 2,
 		title: "Rats",
 		slug: "rats",
-		image_path: "/images/rats.jpg",
+		image_path: "/images/rats.webp",
 		description:
 			"Rapides, méfiants et très intelligents, les rats sont des envahisseurs redoutables, capables de s’adapter à presque tous les environnements. Leur présence n’est jamais anodine : ils causent des dégâts matériels, contaminent les lieux et représentent un réel danger pour la santé humaine.",
 		texte:
@@ -184,7 +184,7 @@ export const services = [
 		id: 5,
 		title: "Guêpes",
 		slug: "guepes",
-		image_path: "/images/guepes.jpg",
+		image_path: "/images/guepes.webp",
 		description:
 			"Indésirables lors des repas en plein air, les guêpes peuvent aussi devenir une menace sérieuse si elles construisent un nid près de chez vous. Leur piqûre est douloureuse, parfois dangereuse, et leur agressivité augmente à mesure que la colonie grandit.",
 		texte:
@@ -229,7 +229,7 @@ export const services = [
 		id: 6,
 		title: "Frelons asiatiques",
 		slug: "frelons-asiatiques",
-		image_path: "/images/frelons-asiatiques.jpg",
+		image_path: "/images/frelons-asiatiques.webp",
 		description:
 			"Invasif, agressif et capable de piquer à plusieurs reprises, le frelon asiatique est un redoutable prédateur. Il représente non seulement un risque pour l’homme, mais aussi une menace pour les abeilles, dont il se nourrit. Son élimination doit être rapide, sécurisée… et confiée à des professionnels.",
 		texte:
@@ -273,7 +273,7 @@ export const services = [
 		id: 7,
 		title: "Frelons européens",
 		slug: "frelons-europeens",
-		image_path: "/images/frelon-europeen.jpg",
+		image_path: "/images/frelon-europeen.webp",
 		description:
 			"Le frelon européen est le plus grand hyménoptère d’Europe. Bien qu’il soit moins agressif que le frelon asiatique, sa piqûre reste douloureuse, et son nid peut devenir problématique lorsqu’il est installé à proximité des habitations. Il est donc essentiel de rester vigilant.",
 		texte:
@@ -318,7 +318,7 @@ export const services = [
 		id: 8,
 		title: "Fourmis",
 		slug: "fourmis",
-		image_path: "/images/fourmis.jpg",
+		image_path: "/images/fourmis.webp",
 		description:
 			"Elles avancent en colonnes, semblent inoffensives… et pourtant, une infestation de fourmis peut vite devenir un vrai cauchemar. Très présentes au printemps et en été, elles s’infiltrent dans les habitations à la recherche de nourriture et peuvent coloniser un espace en un rien de temps.",
 		texte:
@@ -407,7 +407,7 @@ export const services = [
 		id: 10,
 		title: "Taupes",
 		slug: "taupes",
-		image_path: "/images/taupes.jpg",
+		image_path: "/images/taupes.webp",
 		description:
 			"La taupe est un animal solitaire et souterrain, rarement visible, mais dont les dégâts sont bien connus. En creusant des galeries pour se nourrir, elle laisse derrière elle des monticules de terre disgracieux appelés taupinières, et peut endommager durablement vos espaces verts.",
 		texte:
@@ -419,7 +419,7 @@ export const services = [
 			},
 			{
 				emoji: "🌾",
-				texte: "Destruction de cultures indirecte",
+				texte: "Destruction indirecte des cultures",
 			},
 			{
 				emoji: "🕳️",

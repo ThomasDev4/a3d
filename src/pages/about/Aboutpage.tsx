@@ -53,7 +53,7 @@ export default function AboutPage() {
 
 			<h2 className={styles.zoneTitle}>Zone d'intervention</h2>
 			<p className={styles.zoneIntro}>
-				Nous intervenons dans les departement de la Manche et du Calvados,
+				Nous intervenons dans les départements de la Manche et du Calvados,
 				notamment :
 			</p>
 
